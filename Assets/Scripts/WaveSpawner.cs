@@ -23,7 +23,7 @@ public class WaveSpawner : MonoBehaviour
 
     private void SpawnEnemy()
     {
-        GameObject a = Instantiate(Obstacles[Random.Range(0, 3)]) as GameObject;
+        GameObject a = Instantiate(Obstacles[Random.Range(0, 4)]) as GameObject;
         a.transform.position = spawnPos;
     }
 

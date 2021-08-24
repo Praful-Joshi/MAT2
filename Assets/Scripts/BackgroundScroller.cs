@@ -6,11 +6,10 @@ public class BackgroundScroller : MonoBehaviour
 {
 
     //Notes x = -25.30006; go to x = 22.89994 
+    private float width;
+    private float scrollSpeed = -2f;
 
     private Rigidbody2D rb;
-
-    private float width;
-    private float scrollSpeed = -10f;
 
     void Start()
     {
@@ -19,11 +18,11 @@ public class BackgroundScroller : MonoBehaviour
     }
 
     // Update is called once per frame
-    void Update()
+    void FixedUpdate()
     {
-        if (transform.position.x < -25.30006)
+        if (transform.position.x < -27.9)
         {
-            transform.position = new Vector2(22.89994f, transform.position.y);
+            transform.position = new Vector2(29.7f, transform.position.y);
         }
     }
 }
