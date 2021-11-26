@@ -1,2 +1,2 @@
-# MAT2
-A cool game.
+# Space Shooter
+Retro style 2D Space Shooter
